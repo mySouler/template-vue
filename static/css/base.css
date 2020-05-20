@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i,
+strong,
+th {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: none;
+}
+
+.h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_right {
+  text-align: right;
+}
+
+textarea {
+  /* 边框清零 */
+  border: none;
+  /* 轮廓线清零 */
+  outline: none;
+  /* 防止文本域被随意拖拽 */
+  resize: none;
+}
+
+table {
+  /*边框合并*/
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 使用伪元素清除浮动 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: none;
+  clear: both;
+}
+
+ul,
+dl,li{
+  list-style: none;
+  /*display: inline-block;*/
+}
+
+.link {
+  cursor: pointer;
+  
+}
+.link+.link {
+  margin-left: 20px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  font-size: 14px;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 14px;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-size: 14px;
+}
+.el-input__inner::-webkit-input-placeholder { /* WebKit browsers */
+  font-size: 14px;
+}
+
+.el-input__inner::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 14px;
+}
+
+.el-input__inner:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-size: 14px;
+}
+
+
+
+
+.el-form .el-input__inner{
+  height: 32px;
+  width: 240px;
+}
+.el-input{
+  width: auto;
+}
+
+
+.el-input__inner,.el-form--inline .el-form-item__label,.el-form-item__content,.el-input__icon,.el-form-item__label{
+  line-height: 32px;
+}
+.el-date-editor .el-range__icon,.el-date-editor .el-range-separator,.el-date-editor .el-range__close-icon{
+  line-height: 26px;
+}
+.el-date-editor .el-range-separator{
+  padding:0
+}
+
+.el-tabs--card>.el-tabs__header{
+  padding-bottom: 1px !important;
+}
+
+.el-button+.el-button{
+  vertical-align: top;
+}
+/*
+.el-dialog__body{
+  border-top: 1px solid #ddd;
+} */
+
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: var(--bule);
+  color: #FFF;
+}
+/*
+.el-pager li:hover{
+  color: #606266 !important;
+} */
+
+
+.el-notification.right{
+  top: 50% !important;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+
+#load_warp {
+  background: transparent !important;
+}
+
+
+.pagination {
+  background: #fff;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: right;
+}
+
+
+/******************/
+.myDialog .el-button {
+  width: 80px;
+  height: 30px;
+  line-height:30px;
+  padding: 0;
+  color:#fff;
+
+  border-radius: 0;
+  font-size: 12px;
+  border:1px solid #DCDFE6;
+}
+
+.myDialog .el-button+button {
+  color: #808080;
+  background: #fff;
+}
+
+.myDialog .el-dialog__footer {
+  padding-bottom: 40px;
+}
+
+.myDialog .el-dialog__header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  font-weight: bold;
+}
+
+.myDialog .el-dialog__header .el-dialog__title {
+  font-size: 18px;
+}
+
+.myDialog .el-dialog__header .el-dialog__headerbtn {
+  top: 36px;
+}
+
+.yBtn{
+  background-color: var(--yellow) !important;
+  border: 1px solid  var(--yellow);
+  color: #fff !important;
+}
+.yBtn:focus, .yBtn:hover {
+    color: #fff;
+    border-color: var(--yellow);
+    background-color: var(--yellow)!important;
+}
+
+.cancel,.cancel:focus, .cancel:hover {
+  background-color: #fff;
+  border: 1px solid  #ddd;
+  color: #333 !important;
+}
+
+
+
+/*******重置elementUI*********/
+.el-submenu .el-menu-item,.el-menu-item, .el-submenu__title{
+  height: 60px;
+  line-height: 60px;
+}
+.el-menu-item:focus, .el-menu-item:hover,.el-submenu__title:hover {
+  outline: 0;
+  background-color: transparent;
+}
+.el-menu-item,.el-submenu__title{
+  color: #fff;
+}
+.el-menu-item a{
+  color:inherit;
+}
+.el-submenu .el-menu-item{
+  min-width: 140px;
+}
+
+.el-menu-demo.el-menu{
+  display:flex;
+}
+.el-submenu__title{
+  padding-right: 50px;
+}
+.el-submenu__title+.el-menu{
+  background:var(--bule);
+}
+.el-menu.el-menu--horizontal{
+  border-bottom: none;
+  height: 55px !important;
+}
+
+.el-table thead{
+  color: #333;
+  font-size:15px;
+
+}
+.el-table thead div{
+  font-weight:600;
+}
+
+.el-table th{
+  background: #d6d6d6;
+}
